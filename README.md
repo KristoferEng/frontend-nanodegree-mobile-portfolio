@@ -1,3 +1,45 @@
+Instructions on how to run application
+1. Open index.html
+2. Open pizza.html
+
+FYI - I inlined main.js so there is nothing in there.
+
+
+Index.html Optimizations
+1. Inline google fonts css
+2. Inline style css
+3. Changed pizza image to smaller image size since it is only used as a thumbnail here
+4. ImageOptim all the images
+5. Async Google Analytics
+6. Move Google Analytics script down to bottom
+
+Pizza.html (main.js) Optimizations
+1. Change the number of pizzas rendered to 18 from 200 since most would not show up
+2. Inlined the main.js code
+3. Updated updatePositions() to only call document.body.scrollTop once each time instead on in the for loop every time
+4. Got rid of the for loop
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ## Website Performance Optimization portfolio project
 
 Your challenge, if you wish to accept it (and we sure hope you will), is to optimize this online portfolio for speed! In particular, optimize the critical rendering path and make this page render as quickly as possible by applying the techniques you've picked up in the [Critical Rendering Path course](https://www.udacity.com/course/ud884).
