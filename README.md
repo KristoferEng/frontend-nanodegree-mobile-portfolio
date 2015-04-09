@@ -6,19 +6,19 @@ FYI - I inlined main.js so there is nothing in there.
 
 
 Index.html Optimizations
-1. Inline google fonts css
-2. Inline style css
+1. Inlined google fonts css
+2. Inlined style css
 3. Changed pizza image to smaller image size since it is only used as a thumbnail here
-4. ImageOptim all the images
-5. Async Google Analytics
-6. Move Google Analytics script down to bottom
+4. ImageOptim'd all the images
+5. Async'd Google Analytics
+6. Moved Google Analytics script down to bottom
 
 Pizza.html (main.js) Optimizations
-1. Change the number of pizzas rendered to 18 from 200 since most would not show up
+1. Changed the number of pizzas rendered to 80 from 200 since most would not show up
 2. Inlined the main.js code
 3. Updated updatePositions() to only call document.body.scrollTop once each time instead on in the for loop every time
-4. Got rid of the for loop
-
+4. Updated changePizzaSizes() to calculate new width before the for loop
+5. Updated updatePositions() to have sin array
 
 
 
