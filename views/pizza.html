@@ -715,9 +715,15 @@ function updatePositions() {
   //KRISTOFER ENG: Moved the scrollTop out of the loop
   var items = document.querySelectorAll('.mover');
   var temp = document.body.scrollTop;
+
+  var sin = [];
+
+  for (var i = 0; i<5; i++) {
+    sin[i] = Math.sin((temp / 1250) + i);
+  }
+
   for (var i = 0; i < items.length; i++) {
-    var phase = Math.sin((temp / 1250) + (i % 5));
-    items[i].style.left = items[i].basicLeft + 100 * phase + 'px';
+    items[i].style.left = items[i].basicLeft + 100 * sin[i % 5] + 'px';
   }
   
 
